@@ -45,19 +45,19 @@ namespace Bootstrap.WebForms.Controls
 
         #region CssClass method
 
-        string sCssClass = "";
+        string cssClass = "";
 
         /// <summary>Adds the CSS class.</summary>
         /// <param name="cssClass">The CSS class.</param>
         private void AddCssClass(string cssClass)
         {
-            if (string.IsNullOrEmpty(this.sCssClass))
+            if (string.IsNullOrEmpty(this.cssClass))
             {
-                this.sCssClass = cssClass;
+                this.cssClass = cssClass;
             }
             else
             {
-                this.sCssClass += " " + cssClass;
+                this.cssClass += " " + cssClass;
             }
         }
 
@@ -88,8 +88,8 @@ namespace Bootstrap.WebForms.Controls
                 writer.AddAttribute("data-loading-text", this.LoadingText);
 
             writer.AddAttribute(HtmlTextWriterAttribute.Name, this.UniqueID);
-            if (!string.IsNullOrEmpty(this.sCssClass))
-                writer.AddAttribute(HtmlTextWriterAttribute.Class, this.sCssClass);
+            if (!string.IsNullOrEmpty(this.cssClass))
+                writer.AddAttribute(HtmlTextWriterAttribute.Class, this.cssClass);
 
             // Call the base's AddAttributesToRender method 
             base.AddAttributesToRender(writer);

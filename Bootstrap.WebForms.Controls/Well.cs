@@ -14,7 +14,7 @@ namespace Bootstrap.WebForms.Controls
     {
         #region CssClass method
 
-        string sCssClass = "";
+        string cssClass = "";
 
         /// <summary>
         /// Adds the CSS class.
@@ -22,13 +22,13 @@ namespace Bootstrap.WebForms.Controls
         /// <param name="cssClass">The CSS class.</param>
         private void AddCssClass(string cssClass)
         {
-            if (String.IsNullOrEmpty(this.sCssClass))
+            if (String.IsNullOrEmpty(this.cssClass))
             {
-                this.sCssClass = cssClass;
+                this.cssClass = cssClass;
             }
             else
             {
-                this.sCssClass += " " + cssClass;
+                this.cssClass += " " + cssClass;
             }
         }
 
@@ -83,7 +83,7 @@ namespace Bootstrap.WebForms.Controls
                     break;
             }
 
-            this.CssClass = this.sCssClass;
+            this.CssClass = this.cssClass;
 
             base.Render(writer);
         }

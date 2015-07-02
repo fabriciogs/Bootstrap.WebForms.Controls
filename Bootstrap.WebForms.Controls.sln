@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrap.WebForms.Controls", "Bootstrap.WebForms.Controls\Bootstrap.WebForms.Controls.csproj", "{A3B854C9-B883-433A-9006-7D15E83F4B49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrap.WebForms.Controls.Test", "Bootstrap.WebForms.Controls.Test\Bootstrap.WebForms.Controls.Test.csproj", "{28ABEDB2-A308-4BE1-881E-8D0B78C426FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A3B854C9-B883-433A-9006-7D15E83F4B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3B854C9-B883-433A-9006-7D15E83F4B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3B854C9-B883-433A-9006-7D15E83F4B49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28ABEDB2-A308-4BE1-881E-8D0B78C426FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28ABEDB2-A308-4BE1-881E-8D0B78C426FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28ABEDB2-A308-4BE1-881E-8D0B78C426FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28ABEDB2-A308-4BE1-881E-8D0B78C426FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

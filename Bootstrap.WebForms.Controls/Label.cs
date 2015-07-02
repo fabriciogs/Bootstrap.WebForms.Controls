@@ -12,7 +12,7 @@ namespace Bootstrap.WebForms.Controls
     {
         #region CssClass method
 
-        string sCssClass = "";
+        string cssClass = "";
 
         /// <summary>
         /// Adds the CSS class.
@@ -20,13 +20,13 @@ namespace Bootstrap.WebForms.Controls
         /// <param name="cssClass">The CSS class.</param>
         private void AddCssClass(string cssClass)
         {
-            if (string.IsNullOrEmpty(this.sCssClass))
+            if (string.IsNullOrEmpty(this.cssClass))
             {
-                this.sCssClass = cssClass;
+                this.cssClass = cssClass;
             }
             else
             {
-                this.sCssClass += " " + cssClass;
+                this.cssClass += " " + cssClass;
             }
         }
 
@@ -45,22 +45,22 @@ namespace Bootstrap.WebForms.Controls
             set { ViewState["LabelType"] = value; }
         }
 
-        [Bindable(true)]
-        [Category("Appearance")]
-        [DefaultValue("")]
-        [Localizable(true)]
-        public string Text
-        {
-            get
-            {
-                var s = (string)ViewState["Text"];
-                return (s == null) ? string.Empty : s;
-            }
-            set
-            {
-                ViewState["Text"] = value;
-            }
-        }
+        //[Bindable(true)]
+        //[Category("Appearance")]
+        //[DefaultValue("")]
+        //[Localizable(true)]
+        //public string Text
+        //{
+        //    get
+        //    {
+        //        var s = (string)ViewState["Text"];
+        //        return (s == null) ? string.Empty : s;
+        //    }
+        //    set
+        //    {
+        //        ViewState["Text"] = value;
+        //    }
+        //}
 
         protected override void Render(HtmlTextWriter writer)
         {
@@ -90,7 +90,7 @@ namespace Bootstrap.WebForms.Controls
                     break;
             }
 
-            this.CssClass = this.sCssClass;
+            this.CssClass = this.cssClass;
 
             base.Render(writer);
         }
